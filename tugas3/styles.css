@@ -1,0 +1,140 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #191825;
+    padding: 0;
+    margin: 0;
+}
+
+.page-title{
+    margin-top: 70px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.lecturer-wrapper .title-section{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 32px;
+}
+.search-wrapper{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.search-wrapper input{
+    width: 450px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 1px solid  #3A98B9;
+    outline: #2c87a8;
+}
+.search-wrapper button{
+    border: 0px solid;
+    background-color: #3A98B9;
+    padding: 4px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-wrapper button:hover{
+    background-color: #2c87a8;
+}
+.search-wrapper button i{
+    color: white;
+}
+
+.lecturer-group{
+    padding: 32px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.lecturer-group .card{
+    padding: 12px;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 10px 19px 5px rgba(0,0,0,0.075);
+}
+
+.lecturer-group .card .img-wrapper{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+
+.btn-data-lecturer,.btn-close{
+    margin-top: 16px;
+    width: 100%;
+    padding: 8px;
+    background-color: #3A98B9;
+    color: white;
+    border: 0px solid ;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.btn-data-lecturer:hover, .btn-close:hover{
+    background-color: #2c87a8;
+}
+.presence span{
+    color: #ff0000;
+}
+.presence span.hadir{
+    color: #5D9C59;
+}
+
+footer{
+    background-color: rgb(211, 211, 211);
+    padding: 12px;
+    text-align: center;
+}
+.card .data-wrapper{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-wrapper{
+    background-color: #19182551;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-wrapper.show{
+    display: flex;
+}
+
+.card-modal{
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    gap: 32px;
+}
+
+.card-modal .img-wrapper{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-modal .data-wrapper{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
